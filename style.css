@@ -1,71 +1,84 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #17181e;
+html, body {
+	height: 100%;
+	width: 100%;
+}
+.navbar {
+	background-color: #23415C;
+	padding: 1% 0;
+	font-size: 1.2em;
+}
+.navbar-default .navbar-nav li a {
+	color: #D5D5D5;
+}
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav lia a.active {
+	color: #FFF;
+}
+#home {
+	background: url(imgs/background.png) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
 }
 
-.nav {
-  background-color: #595959;
-  color: #ffffff;
-  list-style: none;
-  text-align: center;
-  padding: 20px 0 20px 0;
+.landing-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #d9e3d6;
+	text-shadow: 2px 2px #5e5b5b;
 }
-
-.nav > li {
-  display: inline-block;
-  padding: 0 20px 0 20px;
-
+.landing-text h1 {
+	font-size: 500%;
+	font-weight: 700;
 }
-
-.nav > li > a {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 25px;
+.landing-text a {
+	color: 5e5b5b;
+	text-shadow: 2px 2px #d9e3d6;
 }
-
-.nav > li > a:hover {
-  color: #c1c1c1;
+.padding {
+	padding: 80px 0;
 }
-#Subtitle {
-  text-align: center;
-  color: #d9e3d6;
-  font-size: 100px;
-  font-family: 'Pacifico', cursive;
-  text-shadow: 5px 5px #5e5b5b;
-  animation: fadein 2s;
+.padding img {
+	width: 100%;
 }
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.fixed {
+	background: url(imgs/background-2.png) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
 }
-
-dt {
-  text-align: center;
-  color: #696969;
-  font-size: 50px;
-  font-family: 'Sawarabi Mincho', sans-serif;
-  animation: fadein 2s;
+footer {
+	width: 100%;
+	background-color: #23415C;
+	padding: 5% 5% 10% 5%;
+	color: #FFF;
 }
-
-dd {
-  text-align: center;
-  color: #696969;
-  font-size: 25px;
-  animation: fadein 2s;
+#external-website {
+	padding: 15px;
+	font-size: 25px;
+	color: #FFF;
 }
-
-.button {
-  background-color: #898686;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  animation: fadein 2s;
+#external-website:hover {
+	color: #D5D5D5;
+	text-decoration: none;
+}
+.icon {
+	max-width: 200px;
+}
+@media (max-width: 768px) {
+	.landing-text h1 {
+		font-size: 300%;
+	}
+	#external-website {
+		font-size: 20px;
+		padding: 10px;
+	}
+	.icon {
+		padding-top: 5%;
+		max-width: 100px;
+	}
 }
