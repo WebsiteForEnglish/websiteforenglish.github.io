@@ -46,7 +46,7 @@ html, body {
 .fixed {
 	background: url(imgs/background-2.png) no-repeat center center fixed;
 	display: table;
-	height: 100%;
+	height: 60%;
 	position: relative;
 	width: 100%;
 	background-size: cover;
