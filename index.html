@@ -1,11 +1,23 @@
 <html>
 	<head>
-		<title>Justin's Website | About</title>
+		<title>Justin's Website</title>
 		<meta name="biewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link href="style.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+		
+		<script>
+			$(".navbar #about").click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({
+					scrollTop: $("
+				})
+			}
+		</script>
 	</head>
 	<body>
 	
@@ -22,12 +34,12 @@
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse-main">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a class="active">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Poem</a></li>
-						<li><a href="#">Published Work Commentary</a></li>
-						<li><a href="#">Exclusive Interview</a></li>
-						<li><a href="#">Want to see more?</a></li>
+						<li><a class="active"id="home">Home</a></li>
+						<li><a href="#" id="about">About</a></li>
+						<li><a href="#" id="poem">Poem</a></li>
+						<li><a href="#" id="pwc">Published Work Commentary</a></li>
+						<li><a href="#" id="exclintv">Exclusive Interview</a></li>
+						<li><a href="#"id="wtsm">Want to see more?</a></li>
 					</ul>
 				</div>
 			</div>
@@ -93,7 +105,7 @@
 			</div>
 		</div>
 		
-		<div class="fixed">
+		<div class="fixed-2">
 			<p></p>
 		</div>
 		
@@ -119,10 +131,6 @@
 			</div>
 		</div>
 		
-		<div class="fixed">
-			<p></p>
-		</div>
-		
 		<div class="padding">
 			<div class="container">
 				<div class="col-sm-6">
@@ -135,7 +143,7 @@
 			</div>
 		</div>
 		
-		<div class="fixed">
+		<div class="fixed-3">
 			<p></p>
 		</div>
 		
