@@ -1,23 +1,13 @@
 <html>
 	<head>
 		<title>Justin's Website</title>
-		<meta name="biewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link href="style.css" rel="stylesheet"/>
 		<link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-		
-		<script>
-			$(".navbar #about").click(function(event) {
-				event.preventDefault();
-				
-				$('html, body').animate({
-					scrollTop: $("
-				})
-			}
-		</script>
 	</head>
 	<body>
 	
@@ -34,12 +24,23 @@
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse-main">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a class="active"id="home">Home</a></li>
-						<li><a href="#" id="about">About</a></li>
-						<li><a href="#" id="poem">Poem</a></li>
-						<li><a href="#" id="pwc">Published Work Commentary</a></li>
-						<li><a href="#" id="exclintv">Exclusive Interview</a></li>
-						<li><a href="#"id="wtsm">Want to see more?</a></li>
+						<script>
+							$("a[href^='#']").click(function(e) {
+								e.preventDefault();
+								
+								var position = $($(this).attr("href")).offset().top;
+
+								$("body, html").animate({
+									scrollTop: position
+								} /* speed */ );
+							});
+						</script>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#poem">Poem</a></li>
+						<li><a href="#pwc">Published Work Commentary</a></li>
+						<li><a href="#interview">Exclusive Interview</a></li>
+						<li><a href="#more">Want to see more?</a></li>
 					</ul>
 				</div>
 			</div>
@@ -49,11 +50,11 @@
 			<div class="landing-text">
 				<h1>Sir Isaac Newton</h1>
 				<h3>Learn all about Isaac Newton in this website.</h3>
-				<a href="#" class="btn btn-default btn-lg">Get Started</a>
+				<a href="#about" class="btn btn-default btn-lg">Get Started</a>
 			</div>
 		</div>
 		
-		<div class="padding">
+		<div class="padding" id="about">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
@@ -91,7 +92,7 @@
 			<p></p>
 		</div>
 		
-		<div class="padding">
+		<div class="padding" id="poem">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
@@ -109,7 +110,7 @@
 			<p></p>
 		</div>
 		
-		<div class="padding">
+		<div class="padding" id="pwc">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
@@ -131,7 +132,7 @@
 			</div>
 		</div>
 		
-		<div class="padding">
+		<div class="padding" id="interview">
 			<div class="container">
 				<div class="col-sm-6">
 					<h4>Exclusive Interview with Isaac Newton!!!!!!!!!!</h4>
@@ -147,7 +148,7 @@
 			<p></p>
 		</div>
 		
-		<div class="padding">
+		<div class="padding" id="more">
 			<div class="container">
 				<div class="col-sm-6">
 					<h4>Want to see more? (i dont want to type some more please go away)</h4>
